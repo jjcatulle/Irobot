@@ -1,0 +1,88 @@
+<!-- Output copied to clipboard! -->
+
+<!-----
+NEW: Check the "Suppress top comment" option to remove this info from the output.
+
+Conversion time: 0.396 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β29
+* Wed Mar 31 2021 09:22:21 GMT-0700 (PDT)
+* Source doc: Untitled document
+----->
+
+
+
+## Download VS code (Optional)
+
+[https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+
+
+## Download python 2.7
+
+[https://www.python.org/downloads/release/python-2718/](https://www.python.org/downloads/release/python-2718/)
+
+
+## Add python to Path
+
+
+
+1. Navigate to your folder system
+2. right click on the ‘**This PC**‘ icon. Then, select ‘**Properties**.’
+3. click on the ‘**Advanced system settings**‘
+4. click on the ‘**Environment Variables…**‘
+5. click on `**Path**` then **‘edit’**
+6. Click on **‘new’**
+7. Add the location of python to your path ex “`c:\python27`”
+
+
+## Installing the dependencies
+
+
+
+1. Using the terminal navigate to where the script is located
+2. Run the following command `python -m pip install pyserial`
+
+
+## Running the script
+
+
+
+1. Using the terminal navigate to where the script is located
+2. Run the following command `python  main.py`
+
+
+## Basic Commands
+
+
+```
+p1 = IRobot()
+Create a new robotclass
+
+p1.getSerialPorts()
+Get the available ports
+
+p1.connect('/dev/tty.usbserial-DN027Y2O')
+Connect to the robot
+p1.sendCommandASCII('128')
+p1.sendCommandASCII('131')
+p1.sendCommandASCII('140 3 1 64 16 141 3')
+Check opt code documentation to understand above commands
+
+p1.drive(200, 0) 
+The drive function takes 2 parameter, first number is forward or backward
+positive=foward
+negative=backwward
+
+Second parameter is tire rotation
+positive=left
+negative=right
